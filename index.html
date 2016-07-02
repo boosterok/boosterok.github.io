@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	color: #80f;
+}
+html {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.boosterok {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	margin-top: -50px;
+	font-family: "Courier New", sans-serif;
+	font-size: 100px;
+	font-style: italic;
+	text-align: center;
+	animation: blinker 0.25s linear infinite;
+}
+@keyframes blinker {  
+  50% { opacity: 0.5; }
+  100% { opacity: 1.0; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1 class="boosterok">BOOSTER OK!!</h1>
+</div>
+<audio src="boosterok.wav" loop autoplay></audio>
+</body>
+</html>
